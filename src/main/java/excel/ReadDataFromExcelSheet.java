@@ -73,6 +73,8 @@ public class ReadDataFromExcelSheet {
 				System.out.println("Row counter - "+i);
 				Map<String,String> data=new LinkedHashMap<>();
 				while (cellIterator.hasNext()) {
+					if(i==1)
+						break;
 
 					Cell cell = cellIterator.next();
 					
